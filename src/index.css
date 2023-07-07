@@ -502,7 +502,7 @@ body {
   content: url("../../img/EllipseGradient.svg");
   position: absolute;
   left: 50%;
-  bottom: -40px;
+  bottom: -41.5px;
   transform: translateX(-50%);
 }
 
@@ -643,7 +643,7 @@ body {
 
 .footer {
   position: relative;
-  margin-top: 515px;
+  margin: 515px 0 231px 0;
 }
 
 .questions {
@@ -688,7 +688,7 @@ body {
 .footerImg {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -231px;
 }
 
 /*# sourceMappingURL=index.css.map */
