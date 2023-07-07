@@ -633,16 +633,6 @@ body {
   border: 7px solid var(--str-8, #000);
   background: linear-gradient(130deg, #D02048 0%, #BE1C74 100%);
 }
-.addTeam:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 1794px;
-  opacity: 0.3000000119;
-  background: var(--purple, #6F246E);
-  filter: blur(500px);
-}
 
 .money {
   width: 1072px;
