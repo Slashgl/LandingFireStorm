@@ -157,10 +157,10 @@ body {
 
 .button {
   position: relative;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%);
   color: #000;
-  text-align: center;
   font-family: "Akrobat", serif;
   font-size: 34px;
   font-weight: 600;
@@ -480,6 +480,31 @@ body {
   line-height: 42px;
 }
 
+.wrapper {
+  position: relative;
+}
+
+.gradient-pyramidTop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1120px;
+  opacity: 0.3;
+  background: var(--yellow, #EAAA20);
+  filter: blur(500px);
+}
+
+.gradient-pyramidBottom {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 1794px;
+  opacity: 0.3;
+  background: var(--purple, #6F246E);
+  filter: blur(500px);
+}
+
 .pyramid {
   position: relative;
   display: flex;
@@ -607,6 +632,16 @@ body {
   border-radius: 16px;
   border: 7px solid var(--str-8, #000);
   background: linear-gradient(130deg, #D02048 0%, #BE1C74 100%);
+}
+.addTeam:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1794px;
+  opacity: 0.3000000119;
+  background: var(--purple, #6F246E);
+  filter: blur(500px);
 }
 
 .money {
