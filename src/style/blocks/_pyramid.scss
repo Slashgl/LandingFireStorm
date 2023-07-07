@@ -1,0 +1,167 @@
+
+.pyramid-title {
+  margin-top: 202px;
+  text-align: center;
+  color: var(--white, #EEE);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+.pyramid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 162px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 100%;
+    background: rgb(232,153,33);
+    background: linear-gradient(180deg, rgba(232,153,33,1) 0%, rgba(214,34,41,1) 29%, rgba(199,27,116,1) 58%, rgba(111,36,110,1) 85%);
+    z-index: -1;
+  }
+  &:after {
+    content: url("../../img/EllipseGradient.svg");
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+  }
+}
+
+.circle {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.innerCircleTop {
+  position: absolute;
+  top: -80.7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: orange;
+}
+
+.innerCircleBottom {
+  position: absolute;
+  bottom: -26.7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: purple;
+}
+
+.pyramid-item {
+  position: relative;
+  margin: 0 auto 60px auto;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    border-image: linear-gradient(99deg, rgba(232,153,33,1) 0%, rgba(214,34,41,1) 29%, rgba(199,27,116,1) 58%, rgba(111,36,110,1) 85%);
+    border-image-slice: 1;
+  }
+}
+
+.strategy {
+  width: 338px;
+  height: 76px;
+  padding-top: 7px;
+  text-align: center;
+  border-radius: 16px;
+  border: 4px solid var(--str-8, #000);
+  background: linear-gradient(135deg, #EAAA20 0%, #EAAA20 0.01%, #E26F24 100%);
+  color: #EEE;
+  font-family: 'Akrobat', serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.practice {
+  width: 495px;
+  height: 90px;
+  padding-top: 7px;
+  color: var(--white, #EEE);
+  font-family: 'Akrobat', serif;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  border-radius: 16px;
+  border: 5px solid var(--str-8, #000);
+  background: linear-gradient(130deg, #E06125 0%, #D93728 100%);
+}
+
+.offset {
+  width: 660px;
+  height: 110px;
+  padding-top: 7px;
+  font-family: 'Akrobat', serif;
+  color: var(--white, #EEE);
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  border-radius: 16px;
+  border: 6px solid var(--bg, #050505);
+  background: linear-gradient(130deg, #D62329 0%, #D12045 100%);
+}
+
+.addTeam {
+  width: 900px;
+  height: 139px;
+  padding-top: 7px;
+  font-family: 'Akrobat', serif;
+  color: var(--white, #EEE);
+  text-align: center;
+  font-size: 96px;
+  font-weight: 700;
+  border-radius: 16px;
+  border: 7px solid var(--str-8, #000);
+  background: linear-gradient(130deg, #D02048 0%, #BE1C74 100%);
+}
+
+.money {
+  width: 1072px;
+  height: 180px;
+  padding-top: 7px;
+  font-family: 'Akrobat', serif;
+  color: var(--white, #EEE);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 8px solid var(--str-8, #000);
+  background: linear-gradient(131deg, #BB1D74 0%, #6F246E 100%);
+}
+
+.pyramidButton {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 220px;
+  color: #000;
+  font-family: 'Akrobat', serif;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 42px;
+  @include button(696px, 105px, 50px)
+}

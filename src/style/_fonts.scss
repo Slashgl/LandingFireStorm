@@ -1,5 +1,20 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat-v23-latin_cyrillic-regular.woff2') format('woff2'),
-    url('../fonts/montserrat-v23-latin_cyrillic-regular.woff') format('woff');
+  font-family: 'Bebas Neue Cyrillic';
+  src: url(../fonts/bebasneuecyrillic.eot);
+  src: url(../fonts/bebasneuecyrillic.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/bebasneuecyrillic.otf) format('otf'),
+  url(../fonts/bebasneuecyrillic.svg#bebasneuecyrillic) format('svg'),
+  url(../fonts/bebasneuecyrillic.woff) format('woff'),
+  url(../fonts/bebasneuecyrillic.woff2) format('woff2');
 }
+@font-face {
+  font-family: 'Akrobat';
+  src: url(../fonts/Akrobat/Akrobat.eot);
+  src: url(../fonts/Akrobat/Akrobat.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/Akrobat/Akrobat.woff2) format('woff2'),
+  url(../fonts/Akrobat/Akrobat.ttf) format('truetype'),
+  url(../fonts/Akrobat/Akrobat.svg#Akrobat) format('svg'),
+  url(../fonts/Akrobat/Akrobat.otf) format('otf');
+}
+
+

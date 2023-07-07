@@ -1,0 +1,11 @@
+@mixin cube($color) {
+  content: '';
+  position: absolute;
+  margin-top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 101px;
+  height: 199px;
+  background: $color;
+  filter: blur(0.5px);
+}

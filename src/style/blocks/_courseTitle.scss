@@ -1,0 +1,57 @@
+@import "../mixins/button";
+
+.course-title {
+  display: flex;
+  margin-top: 150px;
+  color: var(--white, #EEE);
+}
+
+.title {
+  width: 230px;
+  height: fit-content;
+  margin-top: 320px;
+  color: var(--white, #EEE);
+  font-size: 300px;
+  font-weight: 400;
+  transform: rotate(-90deg);
+}
+
+.course {
+  height: 190px;
+  margin-top: 145px;
+  color: var(--white, #EEE);
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.experience {
+  color: var(--white, #EEE);
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 111.5px;
+  text-align: left;
+}
+
+.courseDescription {
+  color: var(--white, #EEE);
+  font-family: 'Akrobat', serif;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+.button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #000;
+  text-align: center;
+  font-family: 'Akrobat', serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 42px;
+  text-transform: capitalize;
+  @include button(274px, 114px, 30px)
+}
+

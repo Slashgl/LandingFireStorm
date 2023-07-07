@@ -1,0 +1,49 @@
+.footer {
+  position: relative;
+  margin-top: 515px;
+}
+
+.questions {
+  color: var(--white, #EEE);
+  font-size: 100px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+}
+
+.socialFooter {
+  position: relative;
+  margin-right: 30px;
+  cursor: pointer;
+  &:hover:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #6F246E;
+    z-index: -1;
+  }
+}
+
+.ask {
+  color: var(--white, #EEE);
+  font-size: 100px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footerImg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

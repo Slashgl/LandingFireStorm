@@ -1,0 +1,8 @@
+@mixin button ($width, $height, $radius) {
+  cursor: pointer;
+  width: $width;
+  height: $height;
+  border: 1px solid;
+  border-radius: $radius;
+  background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
+}
