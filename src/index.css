@@ -27,6 +27,7 @@ body {
 
 .gradient-left {
   position: absolute;
+  top: 332px;
   left: -283px;
   width: 773px;
   height: 773px;
