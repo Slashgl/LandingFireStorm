@@ -5,4 +5,8 @@
   border: 1px solid;
   border-radius: $radius;
   background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
+
+  &:hover {
+    background: var(--mag-purple, linear-gradient(300deg, #C71B74 0%, #A842A2 100%));
+  }
 }

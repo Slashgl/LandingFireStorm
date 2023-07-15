@@ -95,6 +95,8 @@ body {
   display: flex;
   justify-content: space-between;
   width: 390px;
+  height: 40px;
+  margin-top: 50px;
 }
 
 .social {
@@ -106,12 +108,16 @@ body {
 .social:hover:before {
   content: "";
   position: absolute;
-  top: 33px;
-  left: -5px;
-  width: 50px;
-  height: 50px;
+  top: -2px;
+  left: -2px;
+  width: 44px;
+  height: 44px;
+}
+
+.hoverSocial:hover:before {
   border-radius: 100%;
-  background-color: #6F246E;
+  background: rgb(199, 27, 116);
+  background: linear-gradient(180deg, rgb(199, 27, 116) 0%, rgb(168, 66, 162) 85%);
   z-index: -1;
 }
 
@@ -173,6 +179,9 @@ body {
   border: 1px solid;
   border-radius: 30px;
   background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
+}
+.button:hover {
+  background: var(--mag-purple, linear-gradient(300deg, #C71B74 0%, #A842A2 100%));
 }
 
 .blockCards {
@@ -240,6 +249,9 @@ body {
   border: 1px solid;
   border-radius: 50px;
   background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
+}
+.cardsButton:hover {
+  background: var(--mag-purple, linear-gradient(300deg, #C71B74 0%, #A842A2 100%));
 }
 
 .cards-back {
@@ -674,6 +686,9 @@ body {
   border-radius: 50px;
   background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
 }
+.pyramidButton:hover {
+  background: var(--mag-purple, linear-gradient(300deg, #C71B74 0%, #A842A2 100%));
+}
 
 .footer {
   position: relative;
@@ -702,13 +717,10 @@ body {
 .socialFooter:hover:before {
   content: "";
   position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: #6F246E;
-  z-index: -1;
+  top: -2px;
+  left: -2px;
+  width: 44px;
+  height: 44px;
 }
 
 .ask {
