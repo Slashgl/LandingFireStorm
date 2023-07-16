@@ -17,15 +17,6 @@
     height: 380px;
     overflow: scroll;
   }
-
-  &:hover {
-    .cards-front {
-      transform: rotateY(180deg);
-    }
-    .cards-back {
-      transform: rotateY(0deg);
-    }
-  }
 }
 
 .cards-title {

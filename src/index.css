@@ -202,12 +202,6 @@ body {
     overflow: scroll;
   }
 }
-.cards:hover .cards-front {
-  transform: rotateY(180deg);
-}
-.cards:hover .cards-back {
-  transform: rotateY(0deg);
-}
 
 .cards-title {
   color: var(--white, #EEE);
