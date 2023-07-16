@@ -2,12 +2,22 @@
 .header {
   display: flex;
   justify-content: space-between;
-  width: 825px;
+  width: 700px;
+  
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
 }
 
 .header-logo {
   display: flex;
   margin-top: 30px;
+  
+  @media (max-width: 1200px) {
+    margin: 0 0 0 15px;
+  }
 }
 
 .header-social {
@@ -16,6 +26,10 @@
   width: 390px;
   height: 40px;
   margin-top: 60px;
+  
+  @media (max-width: 1200px) {
+    margin: 0 auto;
+  }
 }
 
 .social {

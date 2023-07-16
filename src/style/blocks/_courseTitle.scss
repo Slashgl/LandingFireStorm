@@ -4,16 +4,24 @@
   display: flex;
   margin-top: 150px;
   color: var(--white, #EEE);
+  
+  @media (max-width: 1200px) {
+    margin: -150px 0 0 25px;
+  }
 }
 
 .title {
   width: 230px;
-  height: fit-content;
   margin-top: 320px;
   color: var(--white, #EEE);
   font-size: 300px;
   font-weight: 400;
   transform: rotate(-90deg);
+  
+  @media (max-width: 1200px) {
+    width: 130px;
+    font-size: 150px;
+  }
 }
 
 .course {
@@ -23,6 +31,12 @@
   font-size: 200px;
   font-style: normal;
   font-weight: 400;
+
+  @media (max-width: 1200px) {
+    height: 70px;
+    margin-top: 285px;
+    font-size: 100px;
+  }
 }
 
 .experience {
@@ -31,6 +45,11 @@
   font-weight: 400;
   line-height: 111.5px;
   text-align: left;
+
+  @media (max-width: 1200px) {
+    height: 80px;
+    font-size: 45px;
+  }
 }
 
 .courseDescription {
@@ -39,6 +58,11 @@
   font-size: 34px;
   font-weight: 500;
   line-height: 42px;
+  
+  @media (max-width: 1200px) {
+    height: 12px;
+    font-size: 17px;
+  }
 }
 
 .button {
@@ -52,6 +76,13 @@
   font-weight: 600;
   line-height: 42px;
   text-transform: capitalize;
-  @include button(274px, 114px, 30px)
+  @include button(274px, 114px, 30px);
+
+  @media (max-width: 1200px) {
+    position: absolute;
+    top: 500px;
+    font-size: 18px;
+    @include button(242px, 50px, 30px);
+  }
 }
 

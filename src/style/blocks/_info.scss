@@ -6,10 +6,28 @@
   margin-top: 120px;
   border-radius: 50px;
   background: var(--white, #EEE);
+  z-index: -2;
+  
+  @media (max-width: 1200px) {
+  }
 }
 
 .info-title {
   text-align: right;
+  
+  @media (max-width: 1200px) {
+    margin-right: 35px;
+  }
+}
+
+.best {
+  @media (max-width: 1200px) {
+    font-size: 50px;
+  }
+  
+  @media (min-width: 640px) and (max-width: 710px) {
+    color: var(--white, #EEE);
+  }
 }
 
 .best100 {
@@ -18,6 +36,10 @@
   font-size: 90px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (max-width: 1200px) {
+    font-size: 50px;
+  }
 }
 
 .bestDescription {
@@ -27,22 +49,36 @@
   letter-spacing: 0.75px;
   text-transform: capitalize;
   text-align: right;
+
+  @media (max-width: 1200px) {
+    font-size: 50px;
+  }
+
 }
 
 .info-item {
   width: 320px;
   min-height: 100px;
   margin: 0 0 30px 10px;
+  
+  @media (min-width: 640px) and (max-width: 659px) {
+    width: 190px;
+  }
 }
 
 .hundred {
   color: #6F246E;
   font-size: 120px;
+
+  @media (max-width: 1200px) {
+    font-size: 64px;
+  }
 }
 
 .info-description {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   min-height: 250px;
   margin-top: 50px;
@@ -66,6 +102,10 @@
 .infoButton {
   position: relative;
   cursor: pointer;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 
   &:before {
     content: '';
@@ -91,4 +131,14 @@
   font-family: 'Akrobat', serif;
   font-size: 24px;
   font-weight: 500;
+}
+
+.bestImg {
+  @media (max-width: 1200px) {
+    position: absolute;
+    top: -120px;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+  }
 }

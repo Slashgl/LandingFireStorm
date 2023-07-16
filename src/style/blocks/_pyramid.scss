@@ -1,3 +1,4 @@
+@import "../mixins/button";
 
 .pyramid-title {
   margin-top: 202px;
@@ -112,9 +113,8 @@
 }
 
 .strategy {
-  width: 338px;
   height: 76px;
-  padding-top: 7px;
+  padding: 5px 24px 0 24px;
   text-align: center;
   border-radius: 16px;
   border: 6px solid var(--str-8, #000);
@@ -123,12 +123,16 @@
   font-family: 'Akrobat', serif;
   font-size: 40px;
   font-weight: 700;
+
+  @media (max-width: 1200px) {
+    padding-top: 20px;
+    font-size: 20px;
+  }
 }
 
 .practice {
-  width: 495px;
   height: 90px;
-  padding-top: 7px;
+  padding: 10px 28px 0 28px;
   color: var(--white, #EEE);
   font-family: 'Akrobat', serif;
   text-align: center;
@@ -137,12 +141,16 @@
   border-radius: 16px;
   border: 6px solid var(--str-8, #000);
   background: linear-gradient(130deg, #E06125 0%, #D93728 100%);
+
+  @media (max-width: 1200px) {
+    padding-top: 24px;
+    font-size: 24px;
+  }
 }
 
 .offset {
-  width: 660px;
   height: 110px;
-  padding-top: 7px;
+  padding: 10px 32px 0 32px;
   font-family: 'Akrobat', serif;
   color: var(--white, #EEE);
   text-align: center;
@@ -151,12 +159,16 @@
   border-radius: 16px;
   border: 6px solid var(--bg, #050505);
   background: linear-gradient(130deg, #D62329 0%, #D12045 100%);
+
+  @media (max-width: 1200px) {
+    padding-top: 28px;
+    font-size: 32px;
+  }
 }
 
 .addTeam {
-  width: 900px;
   height: 139px;
-  padding-top: 7px;
+  padding: 0 36px 0 36px;
   font-family: 'Akrobat', serif;
   color: var(--white, #EEE);
   text-align: center;
@@ -165,12 +177,16 @@
   border-radius: 16px;
   border: 6px solid var(--str-8, #000);
   background: linear-gradient(130deg, #D02048 0%, #BE1C74 100%);
+
+  @media (max-width: 1200px) {
+    padding-top: 36px;
+    font-size: 48px;
+  }
 }
 
 .money {
-  width: 1072px;
   height: 180px;
-  padding-top: 7px;
+  padding: 0 40px 0 40px;
   font-family: 'Akrobat', serif;
   color: var(--white, #EEE);
   text-align: center;
@@ -179,6 +195,11 @@
   border-radius: 20px;
   border: 6px solid var(--str-8, #000);
   background: linear-gradient(131deg, #BB1D74 0%, #6F246E 100%);
+
+  @media (max-width: 1200px) {
+    padding-top: 40px;
+    font-size: 64px;
+  }
 }
 
 .pyramidButton {
@@ -191,5 +212,9 @@
   font-size: 64px;
   font-weight: 600;
   line-height: 42px;
-  @include button(696px, 105px, 50px)
+  @include button(696px, 105px, 50px);
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
