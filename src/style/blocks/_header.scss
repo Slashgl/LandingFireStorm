@@ -34,6 +34,21 @@
   }
 }
 
+.headerTitle {
+  margin: 10px 0 0 25px;
+}
+
+.logoTitle {
+  font-size: 46px;
+  color: white;
+}
+.logoDescription {
+  font-family: 'Akrobat', sans-serif;
+
+  font-weight: 500;
+  color: gray;
+}
+
 .hoverSocial {
   &:hover:before {
     border-radius: 100%;
