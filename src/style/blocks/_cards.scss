@@ -17,6 +17,15 @@
     height: 380px;
     overflow: scroll;
   }
+
+  &:hover {
+    .cards-front {
+      transform: rotateY(180deg);
+    }
+    .cards-back {
+      transform: rotateY(0deg);
+    }
+  }
 }
 
 .cards-title {
@@ -38,15 +47,6 @@
 
   @media (max-width: 640px) {
     margin-right: 250px;
-  }
-
-  &:hover {
-    .cards-front {
-      transform: rotateY(180deg);
-    }
-    .cards-back {
-      transform: rotateY(0deg);
-    }
   }
 }
 
