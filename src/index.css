@@ -895,6 +895,11 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+@media (max-width: 1200px) {
+  .questions {
+    font-size: 50px;
+  }
+}
 
 .footer-social {
   display: flex;
@@ -923,11 +928,21 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .ask {
+    font-size: 50px;
+  }
+}
 
 .footerImg {
   position: absolute;
   right: 0;
   bottom: -231px;
+}
+@media (max-width: 1200px) {
+  .footerImg img {
+    width: 200px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
