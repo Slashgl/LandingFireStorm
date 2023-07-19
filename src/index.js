@@ -7,17 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener('scroll',  () => {
         const height = document.documentElement.scrollTop;
-            if(height > 300) {
-                cardsFront.forEach(cards => {
-                    cards.style.transform = 'rotateY(180deg)'
+            if(height > 350) {
+                cardsFront.forEach((element, index) => {
+                     setTimeout(() => element.style.transform = 'rotateY(180deg)', 250 * (index + 1))
                 })
 
-                cardsBack.forEach(cards => {
-                    cards.style.transform = 'rotateY(0deg)'
-                })
+                cardsBack.forEach((element, index) => {
+                    setTimeout(() => element.style.transform = 'rotateY(0deg)', 250 * (index + 1));
+                });
             }
     })
-
-
-
 });
