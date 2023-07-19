@@ -26,6 +26,10 @@ body {
   opacity: 0.5;
   background: var(--gradient-4-col, linear-gradient(37deg, rgba(234, 170, 32, 0.85) 0%, rgba(214, 34, 41, 0.85) 33.33%, rgba(199, 27, 116, 0.85) 66.67%, rgba(111, 36, 110, 0.85) 100%));
   filter: blur(500px);
+  
+  @media (max-width: 639px) {
+    width: 100%;
+  }
 }
 
 .gradient-right {
@@ -50,12 +54,21 @@ body {
   right: 0;
   z-index: -10;
 
-  @media (max-width: 1200px) {
+  @media (min-width: 640px) and (max-width: 1200px) {
     top: 70px;
     img {
       object-fit: cover;
       max-width: 300px;
       height: 300px;
+    }
+  }
+  
+  @media (max-width: 639px) {
+    top: 52px;
+    right: 40px;
+    img {
+      max-width: 200px;
+      height: 200px;
     }
   }
 }

@@ -8,15 +8,30 @@
   background: var(--white, #EEE);
   z-index: -2;
   
+  @media (min-width: 320px) and (max-width: 639px) {
+    border-radius: 10px;
+  }
+}
+
+.info-center {
+  width: 100%;
+  margin-right: 95px;
+  
   @media (max-width: 1200px) {
+    margin-right: 0;
   }
 }
 
 .info-title {
   text-align: right;
   
-  @media (max-width: 1200px) {
+  @media (min-width: 640px) and (max-width: 1200px) {
     margin-right: 35px;
+  }
+
+  @media (max-width: 639px) {
+    margin-top: 117px;
+    text-align: center;
   }
 }
 
@@ -27,6 +42,10 @@
   
   @media (min-width: 640px) and (max-width: 710px) {
     color: var(--white, #EEE);
+  }
+
+  @media (max-width: 639px) {
+    color: var(--bg, #050505);
   }
 }
 
@@ -40,6 +59,12 @@
   @media (max-width: 1200px) {
     font-size: 50px;
   }
+  
+  @media (max-width: 639px) {
+    text-align: left;
+    margin: 0 auto;
+    width: 222px;
+  }
 }
 
 .bestDescription {
@@ -50,10 +75,15 @@
   text-transform: capitalize;
   text-align: right;
 
-  @media (max-width: 1200px) {
+  @media (min-width: 640px) and (max-width: 1200px) {
     font-size: 50px;
   }
-
+  
+  @media (max-width: 639px) {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+  }
 }
 
 .info-item {
@@ -63,6 +93,11 @@
   
   @media (min-width: 640px) and (max-width: 659px) {
     width: 190px;
+  }
+
+  @media (max-width: 639px) {
+    margin-bottom: 20px;
+    width: 110px;
   }
 }
 
@@ -83,25 +118,35 @@
   min-height: 250px;
   margin-top: 50px;
   margin-left: 25px;
+
+  @media (min-width: 640px) and (max-width: 1200px) {
+    margin: 0;
+  }
+  
+  @media (max-width: 639px) {
+    margin: 20px 0;
+  }
 }
 
 .tr {
-  width: 416px;
-  margin-top: 250px;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 420px;
   color: var(--bg, #050505);
   text-align: center;
   font-size: 100px;
-  font-style: normal;
   font-weight: 400;
   line-height: 111px;
   text-transform: capitalize;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateY(-60%);
 }
 
 
 .infoButton {
-  position: relative;
   cursor: pointer;
+  position: relative;
+  width: 460px;
 
   @media (max-width: 1200px) {
     display: none;
@@ -110,7 +155,6 @@
   &:before {
     content: '';
     position: absolute;
-    left: 90px;
     border: 4px dashed black;
     height: 100%;
   }
@@ -123,6 +167,10 @@
   font-size: 34px;
   font-weight: 500;
   line-height: 42px;
+
+  @media (max-width: 639px) {
+    font-size: 18px;
+  }
 }
 
 .specification {
@@ -131,14 +179,31 @@
   font-family: 'Akrobat', serif;
   font-size: 24px;
   font-weight: 500;
+
+  @media (max-width: 639px) {
+    font-size: 12px;
+  }
 }
 
 .bestImg {
-  @media (max-width: 1200px) {
+  @media (min-width: 640px) and (max-width: 1200px) {
     position: absolute;
     top: -120px;
     width: 300px;
     height: 300px;
     z-index: -1;
+  }
+  @media (max-width: 639px) {
+    display: none;
+  }
+}
+
+.MobileImg {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (min-width: 640px) {
+    display: none;
   }
 }
