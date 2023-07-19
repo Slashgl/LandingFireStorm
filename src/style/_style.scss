@@ -43,8 +43,12 @@ body {
   background: var(--yellow, #EAAA20);
   filter: blur(471px);
 
-  @media (max-width: 1200px) {
+  @media (min-width: 640px) and (max-width: 1200px) {
     width: 100%;
+  }
+  
+  @media (max-width: 639px) {
+    display: none;
   }
 }
 

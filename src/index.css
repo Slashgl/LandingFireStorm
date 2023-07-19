@@ -53,9 +53,14 @@ body {
   background: var(--yellow, #EAAA20);
   filter: blur(471px);
 }
-@media (max-width: 1200px) {
+@media (min-width: 640px) and (max-width: 1200px) {
   .gradient-right {
     width: 100%;
+  }
+}
+@media (max-width: 639px) {
+  .gradient-right {
+    display: none;
   }
 }
 
@@ -888,6 +893,7 @@ body {
 
 .gradient-pyramidTop {
   position: absolute;
+  top: -500px;
   width: 100%;
   height: 100%;
   border-radius: 1120px;
@@ -905,6 +911,7 @@ body {
   opacity: 0.3;
   background: var(--purple, #6F246E);
   filter: blur(500px);
+  z-index: -1;
 }
 
 .pyramid {
@@ -1159,7 +1166,7 @@ body {
 
 .footer {
   position: relative;
-  margin: 515px 0 231px 0;
+  margin: 300px 0 231px 0;
 }
 @media (min-width: 640px) and (max-width: 1200px) {
   .footer {
@@ -1265,6 +1272,239 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+.chat {
+  margin: 0 15px 0 15px;
+  min-height: 615px;
+  border-radius: 50px;
+  background: var(--white, #EEE);
+}
+@media (max-width: 1200px) {
+  .chat {
+    background: none;
+  }
+}
+
+.chatWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+  min-height: 415px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+@media (max-width: 1200px) {
+  .chatWrapper {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.chatLeft {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 560px;
+  min-height: 414px;
+  padding: 40px 0 40px 40px;
+  border-radius: 20px;
+  border: 1px solid var(--bg, #050505);
+}
+@media (max-width: 1200px) {
+  .chatLeft {
+    width: 100%;
+    background: var(--white, #EEE);
+  }
+}
+@media (max-width: 639px) {
+  .chatLeft {
+    display: block;
+    padding: 0;
+    min-height: 100%;
+  }
+}
+
+.chatRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  width: 560px;
+  min-height: 414px;
+  border-radius: 20px;
+  background: var(--bg, #050505);
+}
+@media (max-width: 1200px) {
+  .chatRight {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 639px) {
+  .chatRight {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.chatTitle {
+  height: 84px;
+  color: var(--bg, #050505);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 42px;
+}
+@media (max-width: 639px) {
+  .chatTitle {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.chatTelegram {
+  cursor: pointer;
+  position: relative;
+  width: 320px;
+  height: 140px;
+}
+.chatTelegram:before {
+  content: url("../../img/social/telegram.svg");
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+@media (max-width: 639px) {
+  .chatTelegram:before {
+    right: 40px;
+  }
+}
+@media (max-width: 639px) {
+  .chatTelegram img {
+    margin: 0 10px;
+    width: 270px;
+    height: 140px;
+  }
+}
+
+.chatWrite {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  color: var(--white, #EEE);
+  font-family: "Akrobat", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 42px;
+}
+@media (max-width: 639px) {
+  .chatWrite {
+    font-size: 28px;
+  }
+}
+
+.formTitle {
+  color: var(--magenta, #C71B74);
+  font-family: "Akrobat", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 42px;
+  width: 300px;
+}
+@media (max-width: 639px) {
+  .formTitle {
+    margin-top: 100px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formWrapper input {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  background: var(--white, #EEE);
+}
+
+.formChecked {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.formChecked input:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  color: #D62329;
+}
+
+.checkboxDescription {
+  color: #FFF;
+  font-family: "Akrobat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.real-checkbox {
+  display: none;
+}
+
+.custom-checkbox {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  stroke-width: 2px;
+  stroke: #FFF;
+  border: 3px solid #FFFFFF;
+  vertical-align: sub;
+}
+.custom-checkbox:before {
+  content: "";
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-image: url("../../img/check.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(0);
+}
+
+.real-checkbox:checked + .custom-checkbox:before {
+  transform: scale(1);
+}
+
+.buttonForm {
+  margin-top: 20px;
+  color: var(--white, #EEE);
+  font-family: "Akrobat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 42px;
+  text-transform: capitalize;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 10px;
+  background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
+}
+.buttonForm:hover {
+  background: var(--mag-purple, linear-gradient(300deg, #C71B74 0%, #A842A2 100%));
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -20,6 +20,7 @@
 
 .gradient-pyramidTop {
   position: absolute;
+  top: -500px;
   width: 100%;
   height: 100%;
   border-radius: 1120px;
@@ -37,6 +38,7 @@
   opacity: 0.3;
   background: var(--purple, #6F246E);
   filter: blur(500px);
+  z-index: -1;
 }
 
 .pyramid {
