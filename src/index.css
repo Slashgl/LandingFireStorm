@@ -339,8 +339,8 @@ body {
   cursor: pointer;
   width: 274px;
   height: 114px;
-  border: 1px solid;
   border-radius: 30px;
+  border: none;
   background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
 }
 .button:hover {
@@ -354,8 +354,8 @@ body {
     cursor: pointer;
     width: 242px;
     height: 50px;
-    border: 1px solid;
     border-radius: 30px;
+    border: none;
     background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
   }
   .button:hover {
@@ -370,8 +370,8 @@ body {
     cursor: pointer;
     width: 300px;
     height: 45px;
-    border: 1px solid;
     border-radius: 30px;
+    border: none;
     background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
   }
   .button:hover {
@@ -460,8 +460,8 @@ body {
   cursor: pointer;
   width: 316px;
   height: 72px;
-  border: 1px solid;
   border-radius: 50px;
+  border: none;
   background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
 }
 .cardsButton:hover {
@@ -473,8 +473,8 @@ body {
     cursor: pointer;
     width: 364px;
     height: 45px;
-    border: 1px solid;
     border-radius: 30px;
+    border: none;
     background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
   }
   .cardsButton:hover {
@@ -488,8 +488,8 @@ body {
     cursor: pointer;
     width: 300px;
     height: 45px;
-    border: 1px solid;
     border-radius: 30px;
+    border: none;
     background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
   }
   .cardsButton:hover {
@@ -943,6 +943,7 @@ body {
 @media (max-width: 639px) {
   .pyramid {
     margin-top: 118px;
+    padding: 0 12px 0 12px;
   }
 }
 
@@ -1134,7 +1135,8 @@ body {
   .money {
     padding-top: 10px;
     height: 70px;
-    font-size: 30px;
+    font-size: 26px;
+    border-radius: 30px;
   }
 }
 
@@ -1151,8 +1153,8 @@ body {
   cursor: pointer;
   width: 696px;
   height: 105px;
-  border: 1px solid;
   border-radius: 50px;
+  border: none;
   background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
 }
 .pyramidButton:hover {
@@ -1504,8 +1506,8 @@ body {
   cursor: pointer;
   width: 100%;
   height: 50px;
-  border: 1px solid;
   border-radius: 10px;
+  border: none;
   background: var(--mag-purple, linear-gradient(90deg, #C71B74 0%, #A842A2 100%));
 }
 .buttonForm:hover {
