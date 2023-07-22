@@ -233,7 +233,7 @@ body {
 }
 @media (max-width: 639px) {
   .course-title {
-    margin: -130px 0 0 0;
+    margin: -130px 0 0 20px;
   }
 }
 
@@ -253,7 +253,8 @@ body {
 }
 @media (max-width: 639px) {
   .title {
-    width: 100px;
+    margin-top: 332px;
+    width: 70px;
     font-size: 100px;
   }
 }
@@ -276,7 +277,7 @@ body {
 @media (max-width: 639px) {
   .course {
     height: 40px;
-    margin-top: 315px;
+    margin-top: 318px;
     font-size: 75px;
   }
 }
@@ -318,7 +319,7 @@ body {
   .courseDescription {
     position: absolute;
     top: 380px;
-    left: 15px;
+    left: 10px;
     width: 285px;
     height: 10px;
     font-size: 14px;
@@ -779,7 +780,7 @@ body {
 }
 @media (min-width: 640px) and (max-width: 1200px) {
   .info-description {
-    margin: 0;
+    margin: 50px 0 0 0;
   }
 }
 @media (max-width: 639px) {

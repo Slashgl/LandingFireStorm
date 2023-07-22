@@ -11,7 +11,7 @@
   }
   
   @media (max-width: 639px) {
-    margin: -130px 0 0 0;
+    margin: -130px 0 0 20px;
   }
 }
 
@@ -29,7 +29,8 @@
   }
 
   @media (max-width: 639px) {
-    width: 100px;
+    margin-top: 332px;
+    width: 70px;
     font-size: 100px;
   }
 }
@@ -50,7 +51,7 @@
   
   @media (max-width: 639px) {
     height: 40px;
-    margin-top: 315px;
+    margin-top: 318px;
     font-size: 75px;
   }
 }
@@ -88,7 +89,7 @@
   @media (max-width: 639px) {
     position: absolute;
     top: 380px;
-    left: 15px;
+    left: 10px;
     width: 285px;
     height: 10px;
     font-size: 14px;
