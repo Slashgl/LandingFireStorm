@@ -158,7 +158,7 @@ body {
 @media (max-width: 639px) {
   .header-social {
     width: 150px;
-    margin: 10px 0 0 100px;
+    margin: 10px 0 0 150px;
   }
 }
 
@@ -1134,7 +1134,7 @@ body {
 }
 @media (max-width: 639px) {
   .money {
-    padding-top: 10px;
+    padding-top: 12px;
     height: 70px;
     font-size: 26px;
     border-radius: 30px;
