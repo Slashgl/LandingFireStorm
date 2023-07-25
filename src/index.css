@@ -35,6 +35,7 @@ body {
   opacity: 0.5;
   background: var(--gradient-4-col, linear-gradient(37deg, rgba(234, 170, 32, 0.85) 0%, rgba(214, 34, 41, 0.85) 33.33%, rgba(199, 27, 116, 0.85) 66.67%, rgba(111, 36, 110, 0.85) 100%));
   filter: blur(500px);
+  z-index: -1;
 }
 @media (max-width: 639px) {
   .gradient-left {
@@ -52,6 +53,7 @@ body {
   opacity: 0.3;
   background: var(--yellow, #EAAA20);
   filter: blur(471px);
+  z-index: -1;
 }
 @media (min-width: 640px) and (max-width: 1200px) {
   .gradient-right {
@@ -134,7 +136,7 @@ body {
 }
 @media (min-width: 640px) and (max-width: 1200px) {
   .header-logo {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 25px;
   }
 }
 @media (max-width: 639px) {
@@ -197,7 +199,7 @@ body {
 .headerTitle {
   margin: 10px 0 0 25px;
 }
-@media (max-width: 639px) {
+@media (max-width: 1200px) {
   .headerTitle {
     display: none;
   }
@@ -650,9 +652,9 @@ body {
   justify-content: space-between;
   min-height: 630px;
   margin-top: 120px;
-  border-radius: 50px;
+  border-radius: 110px;
   background: var(--white, #EEE);
-  z-index: -2;
+  z-index: -1;
 }
 @media (min-width: 320px) and (max-width: 639px) {
   .info-best {
@@ -850,7 +852,6 @@ body {
   .bestImg {
     position: absolute;
     top: -120px;
-    width: 300px;
     height: 300px;
     z-index: -1;
   }
@@ -901,6 +902,7 @@ body {
   opacity: 0.3;
   background: var(--yellow, #EAAA20);
   filter: blur(500px);
+  z-index: -2;
 }
 
 .gradient-pyramidBottom {
@@ -912,7 +914,7 @@ body {
   opacity: 0.3;
   background: var(--purple, #6F246E);
   filter: blur(500px);
-  z-index: -1;
+  z-index: -2;
 }
 
 .pyramid {
